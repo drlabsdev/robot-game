@@ -30,12 +30,15 @@ public class SpringFollow : MonoBehaviour
     [Header("What to Spring")]
     public bool springPosition = true;
     public bool springRotation = false;
-    public bool springScale    = false;
+    public bool springScale = false;
 
     // ── Offset ────────────────────────────────────────────────────────────────
     [Header("Offset (local to target)")]
     [Tooltip("Positional offset applied relative to the target's local space.")]
     public Vector3 positionOffset = Vector3.zero;
+
+    [Tooltip("Euler angle offset added on top of the target's rotation (e.g. 90,0,0 to face a different direction).")]
+    public Vector3 rotationOffset = Vector3.zero;
 
     // ── Clamp / Limits ────────────────────────────────────────────────────────
     [Header("Velocity Limits")]
@@ -44,9 +47,9 @@ public class SpringFollow : MonoBehaviour
 
     // ── Runtime State (read-only in Inspector) ────────────────────────────────
     [Header("Runtime State (read-only)")]
-    [SerializeField, HideInInspector] private Vector3    _posVelocity    = Vector3.zero;
-    [SerializeField, HideInInspector] private Vector3    _scaleVelocity  = Vector3.zero;
-    [SerializeField, HideInInspector] private Vector3    _rotVelocity    = Vector3.zero; // Euler-based
+    [SerializeField, HideInInspector] private Vector3 _posVelocity = Vector3.zero;
+    [SerializeField, HideInInspector] private Vector3 _rotVelocity = Vector3.zero; // Euler-based
+    [SerializeField, HideInInspector] private Vector3 _scaleVelocity = Vector3.zero;
 
     // Exposed for debugging
     [SerializeField] private Vector3 _debugPosVelocity;
@@ -73,11 +76,11 @@ public class SpringFollow : MonoBehaviour
         if (springRotation)
         {
             Vector3 currentEuler = transform.eulerAngles;
-            Vector3 targetEuler  = target.eulerAngles;
+            Vector3 targetEuler = target.eulerAngles + rotationOffset;
 
             // Wrap each axis to avoid 0↔360 jumps
             Vector3 deltaEuler = WrapEuler(targetEuler - currentEuler);
-            Vector3 goalEuler  = currentEuler + deltaEuler;
+            Vector3 goalEuler = currentEuler + deltaEuler;
 
             Vector3 newEuler = StepSpringVector3(
                 currentEuler, goalEuler, ref _rotVelocity, dt);
@@ -105,7 +108,7 @@ public class SpringFollow : MonoBehaviour
     {
         // F = -k·x - c·v   (Hooke's law + damping)
         Vector3 displacement = current - goal;
-        Vector3 force        = (-stiffness * displacement) - (damping * velocity);
+        Vector3 force = (-stiffness * displacement) - (damping * velocity);
         Vector3 acceleration = force / mass;
 
         velocity += acceleration * dt;
@@ -128,7 +131,7 @@ public class SpringFollow : MonoBehaviour
 
     private static float WrapAngle(float angle)
     {
-        while (angle >  180f) angle -= 360f;
+        while (angle > 180f) angle -= 360f;
         while (angle < -180f) angle += 360f;
         return angle;
     }
