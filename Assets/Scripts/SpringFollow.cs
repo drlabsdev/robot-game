@@ -6,10 +6,31 @@ using UnityEngine;
 /// </summary>
 public class SpringFollow : MonoBehaviour
 {
+    // ── Forward Axis ──────────────────────────────────────────────────────────
+    /// <summary>
+    /// Which axis on the target is treated as "forward".
+    /// This rotates the basis used when applying positionOffset and when
+    /// matching the target's orientation during rotation springing.
+    /// </summary>
+    public enum ForwardAxis
+    {
+        PositiveZ,  // Unity default (+Z forward)
+        NegativeZ,
+        PositiveX,
+        NegativeX,
+        PositiveY,
+        NegativeY,
+    }
+
     // ── Target ────────────────────────────────────────────────────────────────
     [Header("Target")]
     [Tooltip("The Transform this object will spring toward.")]
     public Transform target;
+
+    [Tooltip("Which axis of the target is treated as its forward direction.\n" +
+             "• Affects how positionOffset is interpreted (offset X = right relative to this forward).\n" +
+             "• Affects the rotation goal so this object's own +Z faces the chosen axis.")]
+    public ForwardAxis forwardAxis = ForwardAxis.PositiveZ;
 
     // ── Spring Settings ───────────────────────────────────────────────────────
     [Header("Spring Settings")]
@@ -33,8 +54,8 @@ public class SpringFollow : MonoBehaviour
     public bool springScale = false;
 
     // ── Offset ────────────────────────────────────────────────────────────────
-    [Header("Offset (local to target)")]
-    [Tooltip("Positional offset applied relative to the target's local space.")]
+    [Header("Offset (local to target, relative to chosen forward axis)")]
+    [Tooltip("Positional offset applied relative to the target's chosen-forward-axis space.")]
     public Vector3 positionOffset = Vector3.zero;
 
     [Tooltip("Euler angle offset added on top of the target's rotation (e.g. 90,0,0 to face a different direction).")]
@@ -64,10 +85,16 @@ public class SpringFollow : MonoBehaviour
         float dt = Time.deltaTime;
         if (dt <= 0f) return;
 
+        // Build a rotation that remaps the target's space so the chosen axis
+        // behaves as +Z (forward).  All offset / rotation math uses this basis.
+        Quaternion axisRemapLocal = GetAxisRemapRotation(forwardAxis);
+        Quaternion remappedTargetRot = target.rotation * axisRemapLocal;
+
         // ── Position Spring ───────────────────────────────────────────────────
         if (springPosition)
         {
-            Vector3 goalPos = target.TransformPoint(positionOffset);
+            // Transform offset using the remapped basis instead of raw local space
+            Vector3 goalPos = target.position + remappedTargetRot * positionOffset;
             transform.position = StepSpringVector3(
                 transform.position, goalPos, ref _posVelocity, dt);
         }
@@ -76,7 +103,11 @@ public class SpringFollow : MonoBehaviour
         if (springRotation)
         {
             Vector3 currentEuler = transform.eulerAngles;
-            Vector3 targetEuler = target.eulerAngles + rotationOffset;
+            // Use the remapped rotation as the goal so this object's +Z aligns
+            // with the target's chosen forward axis.
+            Quaternion goalQuat = remappedTargetRot *
+                                  Quaternion.Euler(rotationOffset);
+            Vector3 targetEuler = goalQuat.eulerAngles;
 
             // Wrap each axis to avoid 0↔360 jumps
             Vector3 deltaEuler = WrapEuler(targetEuler - currentEuler);
@@ -96,6 +127,26 @@ public class SpringFollow : MonoBehaviour
         }
 
         _debugPosVelocity = _posVelocity;
+    }
+
+    // ── Axis Remap ────────────────────────────────────────────────────────────
+    /// <summary>
+    /// Returns a local-space rotation that re-orients the target so the chosen
+    /// axis points in the +Z direction.  Applying this to target.rotation gives
+    /// a "remapped" world rotation whose forward (+Z) is the chosen axis.
+    /// </summary>
+    private static Quaternion GetAxisRemapRotation(ForwardAxis axis)
+    {
+        return axis switch
+        {
+            ForwardAxis.PositiveZ  => Quaternion.identity,
+            ForwardAxis.NegativeZ  => Quaternion.Euler(0f, 180f, 0f),
+            ForwardAxis.PositiveX  => Quaternion.Euler(0f, -90f, 0f),
+            ForwardAxis.NegativeX  => Quaternion.Euler(0f,  90f, 0f),
+            ForwardAxis.PositiveY  => Quaternion.Euler(90f,  0f, 0f),
+            ForwardAxis.NegativeY  => Quaternion.Euler(-90f, 0f, 0f),
+            _                      => Quaternion.identity,
+        };
     }
 
     // ── Spring Integrator (per-axis Vector3) ──────────────────────────────────
@@ -141,9 +192,19 @@ public class SpringFollow : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         if (target == null) return;
+
+        // Visualise the remapped forward direction
+        Quaternion remapped = target.rotation * GetAxisRemapRotation(forwardAxis);
+        Vector3 remappedForward = remapped * Vector3.forward;
+
         Gizmos.color = Color.cyan;
         Gizmos.DrawLine(transform.position, target.position);
-        Gizmos.DrawWireSphere(target.TransformPoint(positionOffset), 0.05f);
+        Gizmos.DrawWireSphere(
+            target.position + remapped * positionOffset, 0.05f);
+
+        // Draw the chosen forward axis in blue
+        Gizmos.color = Color.blue;
+        Gizmos.DrawRay(target.position, remappedForward * 0.3f);
     }
 #endif
 }

@@ -22,7 +22,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -83,7 +83,112 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: robot(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body
+      parentName: robot(Clone)
+      position: {x: 0.017838273, y: -3.4302897, z: -0.40289527}
+      rotation: {x: -0.70710677, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 2.7708852, y: 2.7708852, z: 2.7708852}
+    - name: Left Arm
+      parentName: robot(Clone)
+      position: {x: -4.050115, y: -3.3189354, z: 0.000000084621675}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1.2311699, y: 1.2311699, z: 1.2311699}
+    - name: Left Foot
+      parentName: robot(Clone)
+      position: {x: -1.2975621, y: -11.39153, z: -0.0000007825368}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 0.6544395, y: 0.6544395, z: 0.6544395}
+    - name: Left Foot Mesh
+      parentName: Left Foot
+      position: {x: -0, y: 1.1368684e-13, z: 0.0000019073486}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Left Hand
+      parentName: robot(Clone)
+      position: {x: -6.101069, y: -3.355796, z: -0.019590616}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left Middle
+      parentName: Left Hand
+      position: {x: -0, y: 0, z: 0.00000023841858}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.6544394, y: 0.6544394, z: 0.65443945}
+    - name: Left Pinky
+      parentName: Left Hand
+      position: {x: -0, y: 0, z: 0.00000023841858}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.65443945, y: 0.65443945, z: 0.65443945}
+    - name: Left Pointer
+      parentName: Left Hand
+      position: {x: -0, y: 0, z: 0.00000023841858}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.65443945, y: 0.65443945, z: 0.65443945}
+    - name: Left Thumb
+      parentName: Left Hand
+      position: {x: -0, y: 0, z: 0.00000023841858}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.7107794, y: 0.7107794, z: 0.7107794}
+    - name: Left Leg
+      parentName: robot(Clone)
+      position: {x: -1.2475104, y: -7.859487, z: -0.0000005066395}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right Foot
+      parentName: robot(Clone)
+      position: {x: 1.3823256, y: -11.47113, z: -0.00000079323183}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 0.6544395, y: 0.6544395, z: 0.6544395}
+    - name: Right Foot Mesh
+      parentName: Right Foot
+      position: {x: -0, y: 1.1368684e-13, z: 0.0000019073486}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Right Hand
+      parentName: robot(Clone)
+      position: {x: 6.1026306, y: -3.355796, z: -0.09078448}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 0.6544395, y: 0.6544395, z: 0.6544395}
+    - name: Right Middle
+      parentName: Right Hand
+      position: {x: 1.431406, y: 1.1142511, z: 0.009064198}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Right Pinky
+      parentName: Right Hand
+      position: {x: 0.52497864, y: 1.7363397, z: 0.009064198}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Right Pointer
+      parentName: Right Hand
+      position: {x: 1.8111792, y: 0.10054541, z: 0.009064198}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Right Thumb
+      parentName: Right Hand
+      position: {x: 0.99266434, y: -1.518254, z: 0.009064198}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Right Leg
+      parentName: robot(Clone)
+      position: {x: 1.3173983, y: -7.8815985, z: -0.0000005506641}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: RightArm
+      parentName: robot(Clone)
+      position: {x: 4.0807643, y: -3.452141, z: 0.00000011540515}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1.2311699, y: 1.2311699, z: 1.2311699}
+    - name: head
+      parentName: robot(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1.5454383, y: 1.5454383, z: 1.5454383}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -94,7 +199,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
