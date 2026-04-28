@@ -42,8 +42,7 @@ public class CanopyScene : MonoBehaviour
         yield return new WaitForSeconds(9);
 
         // Start Backround Music
-        background.enabled = true;
-
+        background.Play();
      
         yield return new WaitForSeconds(5);
 
@@ -55,7 +54,7 @@ public class CanopyScene : MonoBehaviour
         podDoor.isKinematic = true;
 
         // LET PLAYER MOVE
-        
+
 
     }
 
