@@ -8,13 +8,18 @@ public class CanopyScene : MonoBehaviour
     public AudioSource background;
 
     public Rigidbody podDoor;
+    [Header("Robots")]
     public Animator startRobot;
     public AudioSource robotGreet;
+    [Space]
+    public Animator introRobot;
 
+    XRPlayerMove xRPlayerMove;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        xRPlayerMove = FindFirstObjectByType<XRPlayerMove>();
         StartCoroutine(GameState());
     }
 
@@ -30,6 +35,8 @@ public class CanopyScene : MonoBehaviour
 
         // OPEN DOOR
         podDoor.isKinematic = false;
+
+        introRobot.enabled = false;
         // START ROBOT
         startRobot.enabled = true;
 
@@ -46,7 +53,7 @@ public class CanopyScene : MonoBehaviour
      
         yield return new WaitForSeconds(5);
 
-
+        xRPlayerMove.enabled = true;
         // HIDE ROBOT
         startRobot.transform.parent.gameObject.SetActive(false);
 

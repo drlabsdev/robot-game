@@ -17,7 +17,11 @@ ModelImporter:
     removeConstantScaleCurves: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Tests036_mcp' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'YUKUN22:Spine3' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'YUKUN22:Neck1' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -29,7 +33,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Tests036_mcp
+      takeName: Tests036_mcp
+      internalID: 2742340624656217787
+      firstFrame: 922
+      lastFrame: 2104
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -82,8 +115,724 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human: []
-    skeleton: []
+    human:
+    - boneName: YUKUN22:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: YUKUN22:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Tests036(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System
+      parentName: Tests036(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vue_2124982
+      parentName: System
+      position: {x: -8, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -1, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2124609
+      parentName: System
+      position: {x: -3.1308217, y: -0.2092922, z: 2.8299181}
+      rotation: {x: 0.58541274, y: 0.60009426, z: 0.37847936, w: 0.392342}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2128287
+      parentName: System
+      position: {x: -3.1342888, y: 1.3152412, z: 2.807902}
+      rotation: {x: 0.59941375, y: 0.6312404, z: 0.3298169, w: 0.3653211}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2128288
+      parentName: System
+      position: {x: -3.0208309, y: 2.7632282, z: 2.779257}
+      rotation: {x: 0.7834097, y: 0.3837178, z: 0.22319968, w: 0.43498483}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2128302
+      parentName: System
+      position: {x: -2.2625623, y: 2.0062196, z: 0.99070656}
+      rotation: {x: 0.6625609, y: 0.21902955, z: 0.24073075, w: 0.6746021}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2128303
+      parentName: System
+      position: {x: 0.90788364, y: -1.8416668, z: 2.9741673}
+      rotation: {x: 0.0010621548, y: -0.88782763, z: -0.4599034, w: -0.01580447}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2128305
+      parentName: System
+      position: {x: 1.8484051, y: 2.3848526, z: 1.0169482}
+      rotation: {x: 0.67282784, y: -0.21618816, z: -0.20582992, w: 0.6769044}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2128310
+      parentName: System
+      position: {x: 2.863035, y: 1.1654618, z: 2.9797661}
+      rotation: {x: 0.6711247, y: -0.5881429, z: -0.21754871, w: 0.39541402}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2128314
+      parentName: System
+      position: {x: -0.6963798, y: 2.724406, z: 2.849407}
+      rotation: {x: 0.86138624, y: -0.009587184, z: 0.016750336, w: 0.50758386}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2128315
+      parentName: System
+      position: {x: 2.8616135, y: 2.5314255, z: 2.983002}
+      rotation: {x: 0.8208269, y: -0.44158766, z: -0.15597251, w: 0.32698044}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2128355
+      parentName: System
+      position: {x: -1.2461724, y: -1.8418163, z: 2.8928864}
+      rotation: {x: 0.0053076446, y: -0.88010955, z: -0.47468895, w: -0.007035464}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2128360
+      parentName: System
+      position: {x: 2.8842373, y: -0.22413963, z: 3.0209725}
+      rotation: {x: 0.64811045, y: -0.63791823, z: -0.28188705, w: 0.30586413}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2130120
+      parentName: System
+      position: {x: -5.5, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -1, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2130150
+      parentName: System
+      position: {x: -2.7042208, y: -1.8382524, z: 0.9599961}
+      rotation: {x: 0.23049125, y: 0.66141474, z: 0.66373825, w: 0.26240405}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2130176
+      parentName: System
+      position: {x: 2.7449024, y: -1.7299032, z: 3.0250313}
+      rotation: {x: 0.36152664, y: -0.79896647, z: -0.43786493, w: 0.19805412}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vantage_5_2130177
+      parentName: System
+      position: {x: -3.0316985, y: -1.8486735, z: 2.8484263}
+      rotation: {x: 0.23472661, y: 0.8330689, z: 0.48118475, w: 0.13914351}
+      scale: {x: 1, y: 1, z: 1}
+    - name: System:Vue_2129239
+      parentName: System
+      position: {x: -7.5, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: -1, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22
+      parentName: Tests036(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:ARIEL
+      parentName: YUKUN22
+      position: {x: -0.35509223, y: -0.95183754, z: 1.7361586}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LFHD
+      parentName: YUKUN22
+      position: {x: -0.3461594, y: -1.0330191, z: 1.6465079}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LBHD
+      parentName: YUKUN22
+      position: {x: -0.4285893, y: -0.896448, z: 1.6377571}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RFHD
+      parentName: YUKUN22
+      position: {x: -0.2348467, y: -0.9427107, z: 1.6525548}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RBHD
+      parentName: YUKUN22
+      position: {x: -0.31186727, y: -0.82102084, z: 1.6667553}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:C7
+      parentName: YUKUN22
+      position: {x: -0.33151042, y: -0.7517729, z: 1.4722818}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:T10
+      parentName: YUKUN22
+      position: {x: -0.30979273, y: -0.7163606, z: 1.2488252}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:CLAV
+      parentName: YUKUN22
+      position: {x: -0.31929982, y: -0.9481361, z: 1.4187601}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:STRN
+      parentName: YUKUN22
+      position: {x: -0.35830787, y: -0.98408026, z: 1.2892556}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LFSH
+      parentName: YUKUN22
+      position: {x: -0.43743315, y: -0.9315105, z: 1.3858024}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LBSH
+      parentName: YUKUN22
+      position: {x: -0.46080512, y: -0.7930536, z: 1.4815164}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LUPA
+      parentName: YUKUN22
+      position: {x: -0.5958825, y: -0.8316806, z: 1.4621538}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LELB
+      parentName: YUKUN22
+      position: {x: -0.7731707, y: -0.7926652, z: 1.4414141}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LIEL
+      parentName: YUKUN22
+      position: {x: -0.77524835, y: -0.79372495, z: 1.3197346}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LFRM
+      parentName: YUKUN22
+      position: {x: -0.8953098, y: -0.76543874, z: 1.4107603}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LIWR
+      parentName: YUKUN22
+      position: {x: -0.9906905, y: -0.84309876, z: 1.3834764}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LOWR
+      parentName: YUKUN22
+      position: {x: -0.97605, y: -0.74753886, z: 1.3565392}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LIHAND
+      parentName: YUKUN22
+      position: {x: -1.0745127, y: -0.8119943, z: 1.4087433}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LOHAND
+      parentName: YUKUN22
+      position: {x: -1.0687194, y: -0.7671689, z: 1.4015611}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RFSH
+      parentName: YUKUN22
+      position: {x: -0.1816091, y: -0.91973233, z: 1.3935461}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RBSH
+      parentName: YUKUN22
+      position: {x: -0.17952281, y: -0.79953927, z: 1.4824952}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RUPA
+      parentName: YUKUN22
+      position: {x: -0.030601189, y: -0.8126199, z: 1.4611897}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RELB
+      parentName: YUKUN22
+      position: {x: 0.13241382, y: -0.8249446, z: 1.4574592}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RIEL
+      parentName: YUKUN22
+      position: {x: 0.14682548, y: -0.7699514, z: 1.3462083}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RFRM
+      parentName: YUKUN22
+      position: {x: 0.25343844, y: -0.79000026, z: 1.44686}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RIWR
+      parentName: YUKUN22
+      position: {x: 0.35372442, y: -0.84753746, z: 1.4068676}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:ROWR
+      parentName: YUKUN22
+      position: {x: 0.36100826, y: -0.75250083, z: 1.4005884}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RIHAND
+      parentName: YUKUN22
+      position: {x: 0.43208563, y: -0.8287054, z: 1.445786}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:ROHAND
+      parentName: YUKUN22
+      position: {x: 0.4292927, y: -0.78039783, z: 1.4433457}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LFWT
+      parentName: YUKUN22
+      position: {x: -0.49246556, y: -0.92409027, z: 0.87691885}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:MFWT
+      parentName: YUKUN22
+      position: {x: -0.31412476, y: -0.9941845, z: 0.8666429}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RFWT
+      parentName: YUKUN22
+      position: {x: -0.121682696, y: -0.8665003, z: 0.90696514}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LBWT
+      parentName: YUKUN22
+      position: {x: -0.45646504, y: -0.7540011, z: 0.89499027}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:MBWT
+      parentName: YUKUN22
+      position: {x: -0.31176695, y: -0.7142241, z: 0.8933316}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RBWT
+      parentName: YUKUN22
+      position: {x: -0.18662407, y: -0.7430496, z: 0.9093498}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LTHI
+      parentName: YUKUN22
+      position: {x: -0.54646206, y: -0.8888945, z: 0.5832981}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LKNE
+      parentName: YUKUN22
+      position: {x: -0.5815141, y: -0.8264528, z: 0.41609657}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LKNI
+      parentName: YUKUN22
+      position: {x: -0.4328077, y: -0.8329847, z: 0.35724562}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LSHN
+      parentName: YUKUN22
+      position: {x: -0.60327953, y: -0.7729056, z: 0.21517919}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LANK
+      parentName: YUKUN22
+      position: {x: -0.6237816, y: -0.77018386, z: 0.06470723}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LHEL
+      parentName: YUKUN22
+      position: {x: -0.5196115, y: -0.7377145, z: 0.039904084}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LMT5
+      parentName: YUKUN22
+      position: {x: -0.67799824, y: -0.87973493, z: 0.013252258}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LMT1
+      parentName: YUKUN22
+      position: {x: -0.5668637, y: -0.9018609, z: 0.051352117}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LTOE
+      parentName: YUKUN22
+      position: {x: -0.6228264, y: -0.9415938, z: 0.04459542}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RTHI
+      parentName: YUKUN22
+      position: {x: -0.05805697, y: -0.8744093, z: 0.61669534}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RKNE
+      parentName: YUKUN22
+      position: {x: -0.021807304, y: -0.8116974, z: 0.45926777}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RKNI
+      parentName: YUKUN22
+      position: {x: -0.18431121, y: -0.85303473, z: 0.40197375}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RSHN
+      parentName: YUKUN22
+      position: {x: 0.010850222, y: -0.78356254, z: 0.26518765}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RANK
+      parentName: YUKUN22
+      position: {x: 0.04317473, y: -0.76966363, z: 0.1127376}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RHEL
+      parentName: YUKUN22
+      position: {x: -0.057830133, y: -0.778085, z: 0.03242556}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RMT5
+      parentName: YUKUN22
+      position: {x: 0.11771005, y: -0.86688423, z: 0.056158397}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RMT1
+      parentName: YUKUN22
+      position: {x: 0.012341084, y: -0.90558577, z: 0.063431025}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RTOE
+      parentName: YUKUN22
+      position: {x: 0.0865535, y: -0.94231045, z: 0.06580006}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:Hips
+      parentName: YUKUN22
+      position: {x: 0, y: -0.00000011920929, z: 0.799777}
+      rotation: {x: 0.047741093, y: -0.009437695, z: 0.99781746, w: 0.04463216}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:Spine
+      parentName: YUKUN22:Hips
+      position: {x: -0, y: 0, z: 0.11687865}
+      rotation: {x: 0.07848742, y: -0.024139242, z: -0.019122804, w: 0.99643934}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:Spine1
+      parentName: YUKUN22:Spine
+      position: {x: -0, y: 0, z: 0.11687865}
+      rotation: {x: -0.052245542, y: -0.026428755, z: -0.015808402, w: 0.99815935}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:Spine2
+      parentName: YUKUN22:Spine1
+      position: {x: -0, y: 0, z: 0.11687865}
+      rotation: {x: -0.0411051, y: -0.003114288, z: -0.016828379, w: 0.99900824}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:Spine3
+      parentName: YUKUN22:Spine2
+      position: {x: -0, y: 0, z: 0.11687865}
+      rotation: {x: 0.0025101714, y: -0.00237728, z: -0.016948206, w: 0.9998504}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:Neck
+      parentName: YUKUN22:Spine3
+      position: {x: -0, y: 0.015027256, z: 0.15027255}
+      rotation: {x: -0.052704804, y: 0.052887928, z: 0.108595446, w: 0.99127805}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:Neck1
+      parentName: YUKUN22:Neck
+      position: {x: -0, y: 0, z: 0.047679376}
+      rotation: {x: -0.08590386, y: 0.0179035, z: 0.11013058, w: 0.990036}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:Head
+      parentName: YUKUN22:Neck1
+      position: {x: -0, y: 0, z: 0.047679376}
+      rotation: {x: -0.0016518665, y: -0.0445432, z: 0.107201725, w: 0.9932376}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:HeadEnd
+      parentName: YUKUN22:Head
+      position: {x: -0, y: 0, z: 0.08887277}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RightShoulder
+      parentName: YUKUN22:Spine3
+      position: {x: -0, y: 0, z: 0.10519079}
+      rotation: {x: 0.0406504, y: -0.6208531, z: 0.05114909, w: 0.7811995}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RightArm
+      parentName: YUKUN22:RightShoulder
+      position: {x: -0, y: 0, z: 0.1905122}
+      rotation: {x: 0.020520288, y: -0.1147373, z: -0.02772265, w: 0.99279696}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RightForeArm
+      parentName: YUKUN22:RightArm
+      position: {x: -0, y: 0, z: 0.28151715}
+      rotation: {x: -0.054145247, y: -0.0018425965, z: -0.033960987, w: 0.9979537}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RightHand
+      parentName: YUKUN22:RightForeArm
+      position: {x: -0, y: 0, z: 0.20054437}
+      rotation: {x: -0.059562907, y: 0.06871292, z: 0.004109804, w: 0.99584836}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RightHandThumb1
+      parentName: YUKUN22:RightHand
+      position: {x: -0.013086051, y: 0.02666384, z: 0.03585827}
+      rotation: {x: -0.38480818, y: 0, z: -0, w: 0.9229966}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RightHandMiddle1
+      parentName: YUKUN22:RightHand
+      position: {x: -0, y: -0.00091944274, z: 0.09562205}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LeftShoulder
+      parentName: YUKUN22:Spine3
+      position: {x: -0, y: 0, z: 0.10519079}
+      rotation: {x: -0.015550557, y: 0.62281764, z: 0.019524254, w: 0.7819688}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LeftArm
+      parentName: YUKUN22:LeftShoulder
+      position: {x: -0, y: 0, z: 0.1905122}
+      rotation: {x: 0.01857276, y: 0.1399335, z: 0.12284525, w: 0.9823353}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LeftForeArm
+      parentName: YUKUN22:LeftArm
+      position: {x: -0, y: 0, z: 0.28151715}
+      rotation: {x: -0.0785722, y: 0.0017967073, z: 0.024981447, w: 0.9965938}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LeftHand
+      parentName: YUKUN22:LeftForeArm
+      position: {x: -0, y: 0, z: 0.20054437}
+      rotation: {x: -0.050765004, y: -0.057977438, z: -0.002952016, w: 0.997022}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LeftHandThumb1
+      parentName: YUKUN22:LeftHand
+      position: {x: 0.013086051, y: 0.02666384, z: 0.03585827}
+      rotation: {x: -0.38480818, y: 0, z: -0, w: 0.9229966}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LeftHandMiddle1
+      parentName: YUKUN22:LeftHand
+      position: {x: -0, y: -0.00091944274, z: 0.09562205}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RightUpLeg
+      parentName: YUKUN22:Hips
+      position: {x: -0.11446422, y: 0, z: 0}
+      rotation: {x: -0.023571279, y: 0.0833245, z: 0.027657332, w: 0.9958597}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RightLeg
+      parentName: YUKUN22:RightUpLeg
+      position: {x: -0, y: 0, z: -0.37984392}
+      rotation: {x: -0.029736837, y: 0, z: -0, w: 0.9995578}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RightFoot
+      parentName: YUKUN22:RightLeg
+      position: {x: -0, y: 0, z: -0.4074187}
+      rotation: {x: 0.056450855, y: -0.14460388, z: 0.12055419, w: 0.9804946}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RightToeBase
+      parentName: YUKUN22:RightFoot
+      position: {x: -0, y: 0.15169069, z: 0}
+      rotation: {x: -0.0930494, y: 0, z: -0, w: 0.9956615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:RightToeBaseEnd
+      parentName: YUKUN22:RightToeBase
+      position: {x: -0, y: 0.055996723, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LeftUpLeg
+      parentName: YUKUN22:Hips
+      position: {x: 0.11446422, y: 0, z: 0}
+      rotation: {x: -0.066304654, y: -0.14743596, z: -0.057121128, w: 0.9851922}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LeftLeg
+      parentName: YUKUN22:LeftUpLeg
+      position: {x: -0, y: 0, z: -0.37984392}
+      rotation: {x: 0.0031546468, y: -0, z: -0, w: 0.99999505}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LeftFoot
+      parentName: YUKUN22:LeftLeg
+      position: {x: -0, y: 0, z: -0.4074187}
+      rotation: {x: 0.08829694, y: 0.27607924, z: -0.09764896, w: 0.95207596}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LeftToeBase
+      parentName: YUKUN22:LeftFoot
+      position: {x: -0, y: 0.15169069, z: 0}
+      rotation: {x: -0.06517255, y: 0, z: -0, w: 0.997874}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:LeftToeBaseEnd
+      parentName: YUKUN22:LeftToeBase
+      position: {x: -0, y: 0.05037657, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: YUKUN22:Position
+      parentName: YUKUN22
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Unlabeled_Markers
+      parentName: Tests036(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Unlabeled_Markers:_1
+      parentName: Unlabeled_Markers
+      position: {x: 0.78412306, y: 0.7492888, z: 0.19693887}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Unlabeled_Markers:_2
+      parentName: Unlabeled_Markers
+      position: {x: 2.2650871, y: 0.50810164, z: 0.16692223}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
